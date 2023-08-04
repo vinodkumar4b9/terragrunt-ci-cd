@@ -2,7 +2,7 @@ terraform {
   source = "../../../modules/ec2-instance"
 }
 inputs = {
-  instance_type = "t2.micro"
+  instance_type = "t2.medium"
   instance_name = "example-server-dev"
   db_address = dependency.mysql.outputs.instance_ip_addr
 }
